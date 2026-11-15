@@ -1,0 +1,34 @@
+name: Windows check
+on:
+  push:
+    branches: [main]
+    paths: ['app/**', 'ci/**', '.github/workflows/windows-check.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22}
+      - name: Install Playwright (uses the machine's own Chrome and Edge)
+        run: npm install --no-save playwright
+        env: {PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'}
+      - name: Run the app in Chrome and Edge
+        id: run
+        continue-on-error: true
+        run: node ci/check.mjs shots
+      - name: Publish screenshots to the ci-shots branch
+        shell: bash
+        run: |
+          cd shots
+          echo "commit ${{ github.sha }} · run ${{ github.run_number }} · ${{ steps.run.outcome }}" >> result.txt
+          git init -q -b ci-shots
+          git config user.name "github-actions"; git config user.email "actions@users.noreply.github.com"
+          git add -A && git commit -qm "Windows check for ${{ github.sha }}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" ci-shots
+      - if: steps.run.outcome == 'failure'
+        run: exit 1
