@@ -1,0 +1,57 @@
+win32 x64, node v22.23.4
+[chrome] version 156.0.8078.80
+[chrome] laptop opens: Today · MiC Study
+[chrome] laptop screen today: ok
+[chrome] laptop screen library: ok
+[chrome] laptop screen topics: ok
+[chrome] laptop screen review: ok
+[chrome] laptop screen settings: ok
+[chrome] laptop study: pdf pages: 1 pages
+[chrome] laptop text layer: 16 spans
+[chrome] laptop ctrl+wheel zoom: 768 -> 976 px
+[chrome] laptop ctrl+f search: 7 results
+[chrome] laptop pen with the mouse: 1 stroke
+[chrome] laptop kept after reload: ok
+[chrome] laptop works offline: ok
+[chrome] wide opens: Today · MiC Study
+[chrome] wide screen today: ok
+[chrome] wide screen library: ok
+[chrome] wide screen topics: ok
+[chrome] wide screen review: ok
+[chrome] wide screen settings: ok
+[chrome] wide study: pdf pages: 1 pages
+[chrome] wide text layer: 16 spans
+[chrome] wide ctrl+wheel zoom: 1089 -> 1384 px
+[chrome] wide ctrl+f search: 7 results
+[chrome] wide pen with the mouse: 1 stroke
+[chrome] wide kept after reload: ok
+[chrome] wide works offline: ok
+[msedge] version 156.0.4314.58
+[msedge] laptop opens: Today · MiC Study
+[msedge] laptop screen today: ok
+[msedge] laptop screen library: ok
+[msedge] laptop screen topics: ok
+[msedge] laptop screen review: ok
+[msedge] laptop screen settings: ok
+[msedge] laptop study: pdf pages: 1 pages
+[msedge] laptop text layer: 16 spans
+[msedge] laptop ctrl+wheel zoom: 768 -> 976 px
+[msedge] laptop ctrl+f search: 7 results
+[msedge] laptop pen with the mouse: 1 stroke
+[msedge] laptop kept after reload: ok
+[msedge] laptop works offline: ok
+[msedge] wide opens: Today · MiC Study
+[msedge] wide screen today: ok
+[msedge] wide screen library: ok
+[msedge] wide screen topics: ok
+[msedge] wide screen review: ok
+[msedge] wide screen settings: ok
+[msedge] wide study: pdf pages: 1 pages
+[msedge] wide text layer: 16 spans
+[msedge] wide ctrl+wheel zoom: 1089 -> 1384 px
+[msedge] wide ctrl+f search: 7 results
+[msedge] wide pen with the mouse: 1 stroke
+[msedge] wide kept after reload: ok
+[msedge] wide works offline: ok
+RESULT: all passed
+commit 06bd5f871fcdffc3a61bd0515a0f790782df70da · run 3 · success
